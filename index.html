@@ -13,7 +13,7 @@
         <div>
             <div class="left"></div>
             <div class="right">
-                <form>
+                <form action="" method="post">
                     <label for="first-name"
                         >First Name
                         <span aria-label="required">*</span>
@@ -33,7 +33,7 @@
                     <input type="email" id="email" required />
 
                     <label for="number">Contact Number</label>
-                    <input type="tel" id="number" pattern="^[0-9]*$" />
+                    <input type="tel" id="number" pattern="^[0-9]*$" max="11" />
 
                     <label for="password"
                         >Password
@@ -46,6 +46,8 @@
                         <span aria-label="required">*</span>
                     </label>
                     <input type="password" id="confirm-password" required />
+
+                    <button type="submit">Join</button>
                 </form>
             </div>
         </div>
