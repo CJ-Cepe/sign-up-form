@@ -14,56 +14,57 @@
             <div class="left"></div>
             <div class="right">
                 <form action="" method="post">
-                    <h1>Sign-Up</h1>
-
-                    <h2>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Perspiciatis modi eaque ratione esse error
-                        sapiente suscipit ex commodi distinctio quasi.
-                    </h2>
+                    <h1>Enlist in Odin’s army</h1>
+                    <h2>and earn your place in Valhalla</h2>
 
                     <div class="input-row">
                         <label for="first-name"
                             >First Name
                             <span aria-label="required">*</span>
+                            <input type="text" id="first-name" required />
                         </label>
-                        <input type="text" id="first-name" required />
 
                         <label for="last-name"
                             >Last Name
                             <span aria-label="required">*</span>
+                            <input type="text" id="last-name" required />
                         </label>
-                        <input type="text" id="last-name" required />
                     </div>
 
                     <div class="input-row">
                         <label for="email"
                             >Email Address
                             <span aria-label="required">*</span>
+                            <input type="email" id="email" required />
                         </label>
-                        <input type="email" id="email" required />
 
-                        <label for="number">Contact Number</label>
-                        <input
-                            type="tel"
-                            id="number"
-                            pattern="^[0-9]*$"
-                            max="11"
-                        />
+                        <label for="number"
+                            >Contact Number
+                            <input
+                                type="tel"
+                                id="number"
+                                pattern="^[0-9]*$"
+                                max="11"
+                            />
+                        </label>
                     </div>
 
                     <div class="input-row">
                         <label for="password"
                             >Password
                             <span aria-label="required">*</span>
+                            <input type="password" id="password" required />
                         </label>
-                        <input type="password" id="password" required />
 
                         <label for="confirm-password"
                             >Confirm Password
                             <span aria-label="required">*</span>
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                required
+                            />
                         </label>
-                        <input type="password" id="confirm-password" required />
                     </div>
 
                     <button type="submit">Join</button>

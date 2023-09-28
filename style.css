@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 1px red solid;
 }
 
 .main {
@@ -16,13 +17,29 @@
 
 .right {
     background: violet;
-    padding: 3rem;
     width: 60vw;
     display: flex;
+    align-items: center;
+    padding: 10rem 5rem;
+}
+
+form {
+    background-color: aqua;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
+    gap: 1rem;
 }
 
 .input-row {
     display: flex;
+}
+
+.input-row label {
+    flex-grow: 1;
+}
+
+button {
+    width: 8rem;
+    padding: 0.5rem;
 }
