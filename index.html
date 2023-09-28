@@ -10,42 +10,61 @@
         <title>Sign-up form</title>
     </head>
     <body>
-        <div>
+        <div class="main">
             <div class="left"></div>
             <div class="right">
                 <form action="" method="post">
-                    <label for="first-name"
-                        >First Name
-                        <span aria-label="required">*</span>
-                    </label>
-                    <input type="text" id="first-name" required />
+                    <h1>Sign-Up</h1>
 
-                    <label for="last-name"
-                        >Last Name
-                        <span aria-label="required">*</span>
-                    </label>
-                    <input type="text" id="last-name" required />
+                    <h2>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Perspiciatis modi eaque ratione esse error
+                        sapiente suscipit ex commodi distinctio quasi.
+                    </h2>
 
-                    <label for="email"
-                        >Email Address
-                        <span aria-label="required">*</span>
-                    </label>
-                    <input type="email" id="email" required />
+                    <div class="input-row">
+                        <label for="first-name"
+                            >First Name
+                            <span aria-label="required">*</span>
+                        </label>
+                        <input type="text" id="first-name" required />
 
-                    <label for="number">Contact Number</label>
-                    <input type="tel" id="number" pattern="^[0-9]*$" max="11" />
+                        <label for="last-name"
+                            >Last Name
+                            <span aria-label="required">*</span>
+                        </label>
+                        <input type="text" id="last-name" required />
+                    </div>
 
-                    <label for="password"
-                        >Password
-                        <span aria-label="required">*</span>
-                    </label>
-                    <input type="password" id="password" required />
+                    <div class="input-row">
+                        <label for="email"
+                            >Email Address
+                            <span aria-label="required">*</span>
+                        </label>
+                        <input type="email" id="email" required />
 
-                    <label for="confirm-password"
-                        >Confirm Password
-                        <span aria-label="required">*</span>
-                    </label>
-                    <input type="password" id="confirm-password" required />
+                        <label for="number">Contact Number</label>
+                        <input
+                            type="tel"
+                            id="number"
+                            pattern="^[0-9]*$"
+                            max="11"
+                        />
+                    </div>
+
+                    <div class="input-row">
+                        <label for="password"
+                            >Password
+                            <span aria-label="required">*</span>
+                        </label>
+                        <input type="password" id="password" required />
+
+                        <label for="confirm-password"
+                            >Confirm Password
+                            <span aria-label="required">*</span>
+                        </label>
+                        <input type="password" id="confirm-password" required />
+                    </div>
 
                     <button type="submit">Join</button>
                 </form>

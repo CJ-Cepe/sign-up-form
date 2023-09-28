@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    background: rgb(7, 14, 94);
+    width: 40vw;
+}
+
+.right {
+    background: violet;
+    width: 60vw;
+}
