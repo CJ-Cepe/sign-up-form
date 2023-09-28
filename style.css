@@ -16,5 +16,13 @@
 
 .right {
     background: violet;
+    padding: 3rem;
     width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-row {
+    display: flex;
 }
