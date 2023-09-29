@@ -19,14 +19,15 @@
     background: violet;
     width: 60vw;
     display: flex;
-    align-items: center;
-    padding: 10rem 5rem;
+    flex-direction: column;
+    padding: 1rem 2rem;
 }
 
 form {
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     gap: 1rem;
 }
