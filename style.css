@@ -79,9 +79,12 @@ body {
 }
 
 .icon-cont p {
-    font-family: norse;
     color: var(--white);
     text-transform: uppercase;
     font-size: 6rem;
     margin: 0;
+}
+
+.norse-style {
+    font-family: norse;
 }
