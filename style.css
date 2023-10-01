@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -16,7 +18,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    /*  outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body,
@@ -87,4 +89,41 @@ body {
 
 .norse-style {
     font-family: norse;
+}
+
+/* RIGHT CONTAINER */
+.right-cont {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+}
+
+.up-cont > h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.up-cont > h2 {
+    font-size: 1.5rem;
+    color: gray;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.low-cont button {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: 0.5rem 4rem;
+    border-radius: 5px;
+}
+
+.low-cont a,
+.low-cont a:visited {
+    color: #1e1e1e;
+}
+
+.form-row {
+    display: flex;
 }
