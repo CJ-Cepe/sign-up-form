@@ -31,8 +31,9 @@
                         Enlist in Odin’s army and earn your place in Valhalla
                     </h2>
                 </div>
+
                 <div class="mid-cont">
-                    <form action="" method="post">
+                    <form action="" method="get" id="main-form">
                         <div class="form-row">
                             <label for="first-name"
                                 >first name
@@ -72,7 +73,7 @@
                                 type="tel"
                                 id="number"
                                 name="number"
-                                pattern=""
+                                pattern="/^0(9|4)\d{9}$/"
                             />
                         </div>
                         <div class="form-row">
@@ -99,8 +100,11 @@
                         </div>
                     </form>
                 </div>
+
                 <div class="low-cont">
-                    <button type="button" class="norse-style">Join</button>
+                    <button type="submit" class="norse-style" form="main-form">
+                        Join
+                    </button>
                     <p>Already a member? <a href="#">Log in</a></p>
                 </div>
             </div>
