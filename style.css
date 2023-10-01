@@ -18,7 +18,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body,
@@ -105,10 +105,11 @@ body {
 }
 
 .up-cont > h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: gray;
     font-style: italic;
     margin-top: 0;
+    font-weight: 100;
 }
 
 .low-cont button {
@@ -122,6 +123,8 @@ body {
 .low-cont a,
 .low-cont a:visited {
     color: #1e1e1e;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 1px;
 }
 
 .form-row {
