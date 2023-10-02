@@ -177,7 +177,7 @@ input {
     text-transform: capitalize;
     position: absolute;
     left: 0.5rem;
-    top: 0;
+    top: -0.2rem;
     cursor: text;
     transition: 0.2s ease-in-out;
     color: gray;
