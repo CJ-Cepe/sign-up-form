@@ -18,7 +18,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    outline: 1px solid red;
+    /*  outline: 1px solid red; */
 }
 
 body,
@@ -128,8 +128,15 @@ body {
 }
 
 /* FORM */
+form {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 .form-row {
     display: flex;
+    gap: 2rem;
 }
 
 input {
@@ -137,6 +144,7 @@ input {
     border: 0;
     border-bottom: 1px gray solid;
     outline: 0;
+    width: 100%;
 }
 
 ::placeholder {
@@ -145,6 +153,7 @@ input {
 
 .field-cont {
     position: relative;
+    width: 40%;
 }
 
 .field-cont label {
