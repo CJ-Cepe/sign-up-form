@@ -18,7 +18,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body,
@@ -127,6 +127,38 @@ body {
     text-decoration-thickness: 1px;
 }
 
+/* FORM */
 .form-row {
     display: flex;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 1px gray solid;
+    outline: 0;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.field-cont {
+    position: relative;
+}
+
+.field-cont label {
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+    color: gray;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -1.5rem;
+    color: var(--black);
 }
