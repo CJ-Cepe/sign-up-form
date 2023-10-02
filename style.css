@@ -176,17 +176,20 @@ input {
 .field-cont label {
     text-transform: capitalize;
     position: absolute;
-    left: 0;
+    left: 0.5rem;
     top: 0;
     cursor: text;
     transition: 0.2s ease-in-out;
     color: gray;
+    font-size: 0.799rem;
 }
 
 input:focus + label,
 input:not(:placeholder-shown) + label {
     top: -1.5rem;
+    left: 0;
     color: var(--black);
+    font-size: 0.8rem;
 }
 
 .checkbox-cont {
