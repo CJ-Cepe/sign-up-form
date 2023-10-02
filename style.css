@@ -18,7 +18,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    /*  outline: 1px solid red; */
+    /* outline: 1px solid red; */
 }
 
 body,
@@ -99,8 +99,13 @@ body {
     font-family: 'Inter';
 }
 
+.up-cont {
+    margin-bottom: 1rem;
+}
+
 .up-cont > h1 {
     font-size: 5rem;
+    margin-top: 1rem;
     margin-bottom: 0;
 }
 
@@ -114,21 +119,33 @@ body {
 
 .low-cont button {
     background-color: var(--black);
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
     color: var(--white);
     font-size: 1.3rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 3.5rem;
     border-radius: 5px;
 }
 
+.low-cont p {
+    font-size: 0.8rem;
+}
+
 .low-cont a,
-.low-cont a:visited {
+.low-cont a:visited,
+.checkbox-cont a,
+.checkbox-cont a:visited {
     color: #1e1e1e;
     text-underline-offset: 0.3rem;
     text-decoration-thickness: 1px;
 }
 
 /* FORM */
+.mid-cont {
+    margin-bottom: 1rem;
+}
+
 form {
+    font-size: 0.8rem;
     padding: 2rem 2rem 2rem 0;
     display: flex;
     flex-direction: column;
@@ -162,7 +179,7 @@ input {
     left: 0;
     top: 0;
     cursor: text;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     color: gray;
 }
 
@@ -170,4 +187,15 @@ input:focus + label,
 input:not(:placeholder-shown) + label {
     top: -1.5rem;
     color: var(--black);
+}
+
+.checkbox-cont {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type='checkbox'] {
+    margin: 0;
+    width: 1rem;
+    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
 }
